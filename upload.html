@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- Created by Chanith | for MUSICAL BEAT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Musical Beat | Upload</title>
+    <link rel="stylesheet" href="css/upload.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Boxicons CDN Link -->
+    <script src="https://kit.fontawesome.com/fb772cdf84.js" crossorigin="anonymous"></script>
+    
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+        <img src="images/logojj.png" alt="" class="icon" style="width: 40px; margin: 10px;">
+        <a href="index.html"><div class="logo_name">MusicalBeat</div></a>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search'></i>
+         <input type="search" value="" id="search" onchange="openpage()" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="login.html">
+          <i class='bx bx-log-in'></i>
+          <span class="links_name">log In</span>
+        </a>
+         <span class="tooltip">Log In</span>
+      </li>
+      <li>
+       <a href="musicstore.html">
+         <i class='bx bx-music' ></i>
+         <span class="links_name">Music Store</span>
+       </a>
+       <span class="tooltip">Music Store</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-group' ></i>
+         <span class="links_name">Artists</span>
+       </a>
+       <span class="tooltip">Artists</span>
+     </li>
+     <li>
+       <a href="likemusic.html">
+         <i class='bx bx-heart' ></i>
+         <span class="links_name">Liked Songs</span>
+       </a>
+       <span class="tooltip">Liked Songs</span>
+     </li>
+     <li>
+       <a href="likeart.html">
+         <i class='bx bx-heart' ></i>
+         <span class="links_name">Liked Artist</span>
+       </a>
+       <span class="tooltip">Liked Artist</span>
+     </li>
+     <li>
+      <a href="#">
+        <i class='bx bx-upload' ></i>
+        <span class="links_name">Upload</span>
+      </a>
+      <span class="tooltip">Upload</span>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-file' ></i>
+        <span class="links_name">Usage Policy</span>
+      </a>
+      <span class="tooltip">Usage Policy</span>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-info-circle' ></i>
+        <span class="links_name">About</span>
+      </a>
+      <span class="tooltip">ABout</span>
+    </li>
+    </ul>
+  </div>
+
+  <section id="upload" class="section-p1">
+      <div class="drag-area">
+        <div class="icon">
+            <i class="fas fa-cloud-upload"></i>
+        </div>
+          <header>Drag Or Drop File to Upload</header>
+          <span>OR</span>
+          <button>Browse File</button>
+          <input type="file" hidden>  
+      </div>
+
+  </section>
+
+  <script src="js/script.js"></script>
+  <script src="js/upload.js"></script>
+</body>
+</html>

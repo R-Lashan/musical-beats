@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/search.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Topwear')">
+          Topwear
+        </button>
+        <button class="button-value" onclick="filterProduct('Bottomwear')">
+          Bottomwear
+        </button>
+        <button class="button-value" onclick="filterProduct('Jacket')">
+          Jacket
+        </button>
+        <button class="button-value" onclick="filterProduct('Watch')">
+          Watch
+        </button>
+      </div>
+      <div id="products">
+        <div class="card card-1">
+          <a href="habibi.html"><img src="images/musiccovers/habibi.jpg" alt="" class="watermark"></a> 
+           <div class="cover">
+             <div class="pb-wrapper-1">
+               <button onclick="playPause()" id="playPausebtn"><i class="fa fa-play" aria-hidden="true"></i></button>
+                <audio id="audio">
+                 <source src="songs/english/habibi (CSL MUSIC).mp3" type="audio/mp3">
+                </audio>
+               </div>
+           </div>
+           <div class="description">
+              <P class="about">Ricky Rich & ARAM Mafia</P>
+              <h1 class="name">Habibi</h1>
+           </div>
+        </div>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="js/search.js"></script>
+  </body>
+</html>

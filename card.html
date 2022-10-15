@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add to cart</title>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="item1">
+            <img src="/images/musiccovers/habibi.jpg">
+            <div class="title">Red Heels</div>
+        <button onclick="addTocart(item1)">Add to cart</button>
+        </div>
+
+        <div class="card" id="item2">
+            <img src="/images/musiccovers/Kudukku.jpg">
+            <div class="title">kuuuuu </div>
+        <button onclick="addTocart(item2)">Add to cart</button>
+        </div>
+    </div>
+
+    <div class="cart" id="cart">
+        <div class="title">cart</div><hr/>
+        <div id="title"></div>
+    </div>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>

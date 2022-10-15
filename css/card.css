@@ -1,0 +1,81 @@
+#English h2{
+    text-align: start;
+    color: #19181B;
+    margin-bottom: -10px;
+  }
+  
+  #English .normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #19181B;
+    background-color: #e9e1e1;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    margin-left: 20px;
+  }
+  
+  #English button:hover{
+    background: #088178;
+    color: white;
+  }
+  
+  #English .pro{
+    width: 20%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    height: 55vh;
+  }
+  
+  #English .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0, 0.06);
+  }
+  
+  #English .pro img{
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+  #English .pro .des{
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  #English .pro .des span{
+    color: #606063;
+    font-size: 12px;
+  }
+  
+  #English .pro .des h5{
+    padding-top: 0px;
+    color: #1a1a1a;
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  #English .pro-container{
+      display: flex;
+      justify-content: space-between;
+      padding-top: 20px;
+      flex-wrap: wrap;
+  }
+#icon{
+    cursor: pointer;
+}
+
+.right-col{
+    position: relative;
+    bottom: 60px;
+    left: 240px;
+    height: 50px;
+    width: 50px;
+}

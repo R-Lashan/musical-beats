@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<!-- Created by Chanith | for MUSICAL BEAT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Musical Beat | Music Store</title>
+    <link rel="shortcut icon" type="image" href="images/new musical beat logo.png">
+    <link rel="stylesheet" href="css/musicstore.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Boxicons CDN Link -->
+    <script src="https://kit.fontawesome.com/fb772cdf84.js" crossorigin="anonymous"></script>
+    
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   
+<body>
+  
+  <div class="sidebar">
+    <div class="logo-details">
+        <img src="images/new musical beat logo.png" alt="" class="icon" style="width: 40px; margin: 10px;">
+        <a href="index.html"><div class="logo_name">MusicalBeatZ</div></a>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <a href="search.html">
+          <i class='bx bx-search'></i>
+          <span class="links_name">Search</span>
+        </a>
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="login.html">
+          <i class='bx bx-log-in'></i>
+          <span class="links_name">log In</span>
+        </a>
+         <span class="tooltip">Log In</span>
+      </li>
+      <li>
+       <a href="musicstore.html">
+         <i class='bx bx-music' ></i>
+         <span class="links_name">Music Store</span>
+       </a>
+       <span class="tooltip">Music Store</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-group' ></i>
+         <span class="links_name">Artists</span>
+       </a>
+       <span class="tooltip">Artists</span>
+     </li>
+     <li>
+       <a href="likemusic.html">
+         <i class='bx bx-heart' ></i>
+         <span class="links_name">Liked Songs</span>
+       </a>
+       <span class="tooltip">Liked Songs</span>
+     </li>
+     <li>
+       <a href="likeart.html">
+         <i class='bx bx-heart' ></i>
+         <span class="links_name">Liked Artist</span>
+       </a>
+       <span class="tooltip">Liked Artist</span>
+     </li>
+     <li>
+      <a href="#">
+        <i class='bx bxs-cloud-upload' ></i>
+        <span class="links_name">Upload</span>
+      </a>
+      <span class="tooltip">Upload</span>
+    </li>
+     <li>
+      <a href="policy.html">
+        <i class='bx bx-file' ></i>
+        <span class="links_name">Usage Policy</span>
+      </a>
+      <span class="tooltip">Usage Policy</span>
+    </li>
+    <li>
+      <a href="about.html">
+        <i class='bx bx-info-circle' ></i>
+        <span class="links_name">About</span>
+      </a>
+      <span class="tooltip">About</span>
+    </li>
+    <li>
+      <a href="contact.html">
+        <i class='bx bxs-copyright' ></i>
+        <span class="links_name">Contact</span>
+      </a>
+      <span class="tooltip">Contact</span>
+    </li>
+     
+     
+    </ul>
+  </div>
+  <section id="banner" class="section-m1">
+      <h4>Musical Beat</h4>
+      <h2>Listen To Your Favourite Song </h2>
+      <button class="normal">check out More</button>
+  </section>
+
+
+  
+  <section id="newsongs" class="section-p1">
+    <h2>Trending Release <i class="fas fa-arrow-right"></i></h2> 
+    <div class="container">
+       <div class="card card-1">
+         <a href="habibi.html"><img src="images/musiccovers/habibi.jpg" alt="" class="watermark"></a> 
+          <div class="cover">
+            <div class="pb-wrapper-1">
+              <button onclick="playPause()" id="playPausebtn"><i class="fa fa-play" aria-hidden="true"></i></button>
+               <audio id="audio">
+                <source src="./open/songs/english/habibi (CSL MUSIC).mp3" type="audio/mp3">
+               </audio>
+              </div>
+          </div>
+          <div class="description">
+             <P class="about">Ricky Rich & ARAM Mafia</P>
+             <h1 class="name">Habibi</h1>
+          </div>
+       </div>
+       <div class="card card-2">
+       <a href="intourarms.html"><img src="images/musiccovers/intoyourarms.jpg"></a>  
+         <div class="cover">
+          <div class="pb-wrapper-2">
+            <button onclick="playPausebn()" id="intoyourarms"><i class="fa fa-play" aria-hidden="true"></i></button>
+          <audio id="intoyour">
+            <source src="./open/songs/english/Witt Lowry - Into Your Arms (Lyrics) ft. Ava Max - [No Rap].mp3" type="audio/mp3">
+          </audio>
+          </div>
+        </div>
+        <div class="description">
+           <P class="about">Witt Lowry ft.Ava Max</P>
+           <h1 class="name">Into Your Arms</h1>
+        </div>
+       </div>
+       <div class="card card-3">
+       <a href="TumTum.html"><img src="images/musiccovers/tum tum.jfif" alt="" class="watermark"></a> 
+        <div class="cover">
+          <div class="pb-wrapper-3">
+            <button onclick="playPausebnt()" id="kings"><i class="fa fa-play" aria-hidden="true"></i></button>
+            <audio id="kingssong">
+              <source src="./open/songs/english/Tum Tum - Video Song _ Enemy (Tamil) _ Vishal,Arya _ Anand Shankar _ Vinod Kumar _ Thaman S.mp3" type="audio/mp3">
+            </audio>
+          </div>
+        </div>
+        <div class="description">
+           <P class="about">Sri Vardhini</P>
+           <h1 class="name"> Tum Tum (Enemy)</h1>
+        </div>
+     </div>
+       <div class="card card-4">
+         <a href="https://drive.google.com/uc?export=download&id=18M_mvzpchisa-6EqZ8ah0rUaQLUUH-pB" download=""><img src="images/musiccovers/thenights.jpg"></a> 
+          <div class="cover">
+            <div class="pb-wrapper-4">
+              <button onclick="playPausebntt()" id="nights"><i class="fa fa-play" aria-hidden="true"></i></button>
+              <audio id="night">
+                <source src="./open/songs/english/Avicii - The Nights (Lyrics).mp3" type="audio/mp3">
+              </audio>
+            </div>
+          </div>
+           <div class="description">
+              <P class="about">Avicii</P>
+              <h1 class="name">The Nights</h1>
+           </div>
+       </div>
+       <div class="card card-5">
+        <a href="lovely.html"><img src="images/musiccovers/lovely.jpg"></a>  
+          <div class="cover">
+            <div class="pb-wrapper-5">
+              <button onclick="playPausebnttt()" id="billie"><i class="fa fa-play" aria-hidden="true"></i></button>
+              <audio id="lovely">
+                <source src="./open/songs/english/Billie Eilish, Khalid - lovely.mp3" type="audio/mp3">
+              </audio>
+            </div>
+          </div>
+           <div class="description">
+              <P class="about">Billie Eilish, Khalid</P>
+              <h1 class="name"> lovely</h1>
+           </div>
+       </div>
+    </div>
+  </section>
+<section id="trend" class="section-p1">
+    <h2>English Release <i class="fas fa-arrow-right"></i></h2> 
+    <div class="container">
+       <div class="card card-1">
+          <a href="king.html"><img src="images/musiccovers/kings&quenn.jpg" alt="" class="watermark"></a>
+          <div class="cover">
+            <div class="pb-wrapper-1">
+              <button onclick="playPausetuf()" id="tumm"><i class="fa fa-play" aria-hidden="true"></i></button>
+              <audio id="tumtumm">
+                <source src="./open/songs/english/Ava Max - Kings & Queens [Official Music Video] (1).mp3" type="audio/mp3">
+              </audio>
+            </div>
+          </div>
+          <div class="description">
+             <P class="about">Ava Max</P>
+             <h1 class="name">Kings & Queens</h1>
+          </div>
+       </div>
+       <div class="card card-2">
+        <a href="Don'tLetMeDown.html"><img src="images/musiccovers/letdownslowly.png"></a> 
+         <div class="cover">
+          <div class="pb-wrapper-2">
+            <button onclick="playPausetuff()" id="don"><i class="fa fa-play" aria-hidden="true"></i></button>
+            <audio id="me">
+              <source src="./open/songs/english/The Chainsmokers - Don't Let Me Down (Official Video) ft. Daya.mp3" type="audio/mp3">
+            </audio>
+          </div>
+        </div>
+        <div class="description">
+           <P class="about">The Chainsmokers</P>
+           <h1 class="name">Don't Let Me Down</h1>
+        </div>
+       </div>
+       <div class="card card-3">
+      <a href="letmedownslowly.html"><img src="images/musiccovers/letmedown.jfif" alt="" class="watermark"></a>  
+        <div class="cover">
+          <div class="pb-wrapper-3">
+            <button onclick="playPausele()" id="let"><i class="fa fa-play" aria-hidden="true"></i></button>
+            <audio id="letme">
+              <source src="./open/songs/english/Alec Benjamin - Let Me Down Slowly [Official Music Video].mp3" type="audio/mp3">
+            </audio>
+          </div>
+        </div>
+        <div class="description">
+           <P class="about">Alec Benjamin</P>
+           <h1 class="name">Let Me Down Slowly</h1>
+        </div>
+     </div>
+       <div class="card card-4">
+          <a href="Jalebibaby.html"><img src="images/musiccovers/jalibi.jfif"></a>
+          <div class="cover">
+            <div class="pb-wrapper-4">
+              <button onclick="playPauseb()" id="jalebi"><i class="fa fa-play" aria-hidden="true"></i></button>
+              <audio id="baby">
+                <source src="./open/songs/english/Tesher x Jason Derulo - Jalebi Baby (Official Video).mp3" type="audio/mp3">
+              </audio>
+            </div>
+          </div>
+           <div class="description">
+              <P class="about">Tesher</P>
+              <h1 class="name">Jalebi Baby</h1>
+           </div>
+       </div>
+       <div class="card card-5">
+          <img src="images/musiccovers/despactio.jfif">
+          <div class="cover">
+            <div class="pb-wrapper-5">
+              <button onclick="playPausem()" id="despa"><i class="fa fa-play" aria-hidden="true"></i></button>
+              <audio id="Despacito">
+                <source src="./open/songs/english/Luis Fonsi - Despacito ft. Daddy Yankee.mp3" type="audio/mp3">
+              </audio>
+            </div>
+          </div>
+           <div class="description">
+              <P class="about">Luis Fonsi, Daddy Yankee</P>
+              <h1 class="name">Despacito</h1>
+           </div>
+       </div>
+    </div>
+  </section>
+
+  <section id="sinhala" class="section-p1">
+    <h2>Sinhala Release <i class="fas fa-arrow-right"></i></h2> 
+    <div class="container">
+       <div class="card card-1">
+          <img src="images/musiccovers/miMiriguwa.jpg" alt="" class="watermark">
+          <div class="cover">
+            <div class="pb-wrapper-1">
+              <button onclick="playPauset()" id="miri"><i class="fa fa-play" aria-hidden="true"></i></button>
+              <audio id="miriguwa">
+                <source src="./open/songs/sinhala/yt1s.com - Miriguwa  Evill Zy ft Buddi K පඩ වනන න අප යනන මක පව  Official Music Video.mp3" type="audio/mp3">
+              </audio>
+            </div>
+          </div>
+          <div class="description">
+             <P class="about">Evill Zy ft.Buddi K </P>
+             <h1 class="name">Miriguwa</h1>
+          </div>
+       </div>
+       <div class="card card-2">
+         <img src="images/musiccovers/AndakareMan.jpg">
+         <div class="cover">
+          <div class="pb-wrapper-2">
+            <button onclick="playPausett()" id="anda"><i class="fa fa-play" aria-hidden="true"></i></button>
+              <audio id="andakere">
+                <source src="./open/songs/sinhala/Dilo - Andakare Man (Official Music Video).mp3" type="audio/mp3">
+              </audio>
+          </div>
+        </div>
+        <div class="description">
+           <P class="about">Dilo</P>
+           <h1 class="name">Andakare Man</h1>
+        </div>
+       </div>
+       <div class="card card-3">
+        <img src="images/musiccovers/thaleta.jpg" alt="" class="watermark">
+        <div class="cover">
+          <div class="pb-wrapper-3">
+            <button onclick="playPausettt()" id="thale"><i class="fa fa-play" aria-hidden="true"></i></button>
+            <audio id="thaleta">
+              <source src="./open/songs/sinhala/Thaleta Kiwwa (තාලෙට කිව්වා) - Nilan Hettiarachchi Official Music Video.mp3" type="audio/mp3">
+            </audio>
+          </div>
+        </div>
+        <div class="description">
+           <P class="about">Nilan Hettiarachchi</P>
+           <h1 class="name">Thaleta Kiwwa</h1>
+        </div>
+     </div>
+       <div class="card card-4">
+          <img src="images/musiccovers/sanda-wage-pena.jpg">
+          <div class="cover">
+            <div class="pb-wrapper-4">
+              <button onclick="playPause45()" id="wage"><i class="fa fa-play" aria-hidden="true"></i></button>
+              <audio id="sanda">
+                <source src="./open/songs/sinhala/Sanda Wage Pena ( සඳ වගෙ පේනා ) - Hana Ft. Dilo _ Official Music Video.mp3" type="audio/mp3">
+              </audio>
+            </div>
+          </div>
+           <div class="description">
+              <P class="about">Hana ft. Dilo</P>
+              <h1 class="name">Sanda Wage Pena</h1>
+           </div>
+       </div>
+       <div class="card card-5">
+          <img src="images/musiccovers/ape hadakam.jfif">
+          <div class="cover">
+            <div class="pb-wrapper-5">
+              <button onclick="playPauseu()" id="ape"><i class="fa fa-play" aria-hidden="true"></i></button>
+              <audio id="hadhakam">
+                <source src="./open/songs/sinhala/Uzi Senadeera - Ape Hadhakam (Official Music Video).mp3" type="audio/mp3">
+              </audio>
+            </div>
+          </div>
+           <div class="description">
+              <P class="about">Uzi Senadeera</P>
+              <h1 class="name">Ape Hadhakam</h1>
+           </div>
+       </div>
+    </div>
+  </section>
+
+  <section id="tamil" class="section-p1">
+    <h2>Tamil Release <i class="fas fa-arrow-right"></i></h2> 
+    <div class="container">
+       <div class="card card-1">
+          <img src="images/musiccovers/tum tum.jfif" alt="" class="watermark">
+          <div class="cover">
+            <div class="pb-wrapper-1">
+              <button onclick="playPausetu()" id="tum"><i class="fa fa-play" aria-hidden="true"></i></button>
+              <audio id="tumtum">
+                <source src="./open/songs/english/Tum Tum - Video Song _ Enemy (Tamil) _ Vishal,Arya _ Anand Shankar _ Vinod Kumar _ Thaman S.mp3" type="audio/mp3">
+              </audio>
+            </div>
+          </div>
+          <div class="description">
+             <P class="about">Sri Vardhini</P>
+             <h1 class="name">Tum Tum (Enemy)</h1>
+          </div>
+       </div>
+       <div class="card card-2">
+         <img src="images/musiccovers/vaathiraid.png">
+         <div class="cover">
+          <div class="pb-wrapper-2">
+            <button onclick="playPausera()" id="raid"><i class="fa fa-play" aria-hidden="true"></i></button>
+              <audio id="beat">
+                <source src="./open/songs/tamil/Master - Vaathi Raid Video _ Thalapathy Vijay _ Anirudh Ravichander _ Lokesh Kanagaraj.mp3" type="audio/mp3">
+              </audio>
+          </div>
+        </div>
+        <div class="description">
+           <P class="about">Anirudh Ravichander</P>
+           <h1 class="name">Vaathi Raid</h1>
+        </div>
+       </div>
+       <div class="card card-3">
+        <img src="images/musiccovers/vaathi.jfif" alt="" class="watermark">
+        <div class="cover">
+          <div class="pb-wrapper-3">
+            <button onclick="playPausedo()" id="master"><i class="fa fa-play" aria-hidden="true"></i></button>
+            <audio id="vaathi">
+              <source src="./open/songs/tamil/Master - Vaathi Coming Video _ Thalapathy Vijay _ Anirudh Ravichander _ Lokesh Kanagaraj.mp3" type="audio/mp3">
+            </audio>
+          </div>
+        </div>
+        <div class="description">
+           <P class="about">Anirudh Ravichander,Gana Balachander</P>
+           <h1 class="name">Vaathi Coming</h1>
+        </div>
+     </div>
+       <div class="card card-4">
+          <img src="images/musiccovers/enjoy.jfif">
+          <div class="cover">
+            <div class="pb-wrapper-4">
+              <button onclick="playPausee()" id="enjoy"><i class="fa fa-play" aria-hidden="true"></i></button>
+              <audio id="enjaami">
+                <source src="./open/songs/tamil/Dhee ft. Arivu - Enjoy Enjaami (Prod. Santhosh Narayanan).mp3" type="audio/mp3">
+              </audio>
+            </div>
+          </div>
+           <div class="description">
+              <P class="about">Dhee ft.Arivu</P>
+              <h1 class="name">Enjoy Enjaami</h1>
+           </div>
+       </div>
+       <div class="card card-5">
+          <img src="images/musiccovers/kutti.jfif">
+          <div class="cover">
+            <div class="pb-wrapper-5">
+              <button onclick="playPause3()" id="kutti"><i class="fa fa-play" aria-hidden="true"></i></button>
+              <audio id="stroy">
+                <source src="./open/songs/tamil/Master - Kutti Story Video _ Thalapathy Vijay _ Anirudh Ravichander _ Lokesh Kanagaraj.mp3" type="audio/mp3">
+              </audio>
+            </div>
+          </div>
+           <div class="description">
+              <P class="about">Anirudh Ravichander,Vijay & Sofia</P>
+              <h1 class="name">Kutti Story</h1>
+           </div>
+       </div>
+    </div>
+  </section>
+
+  
+
+  <section id="telugu" class="section-p1">
+    <h2>Telugu Release <i class="fas fa-arrow-right"></i></h2> 
+    <div class="container">
+       <div class="card card-1">
+          <img src="images/musiccovers/samisami.jpg" alt="" class="watermark">
+          <div class="cover">
+            <div class="pb-wrapper-1">
+              <button onclick="playPauses()" id="saami"><i class="fa fa-play" aria-hidden="true"></i></button>
+              <audio id="saamiaudio">
+                <source src="./open/songs/tamil/Saami Saami (Tamil) Full Video Song _ Pushpa Songs _ Allu Arjun, Rashmika _ DSP _ Sukumar.mp3" type="audio/mp3">
+              </audio>
+            </div>
+          </div>
+          <div class="description">
+             <P class="about">Mounika Yadav</P>
+             <h1 class="name">Saami Saami</h1>
+          </div>
+       </div>
+       <div class="card card-2">
+         <img src="images/musiccovers/Inkem Inkem.png">
+         <div class="cover">
+          <div class="pb-wrapper-2">
+            <button onclick="playPauseZ()" id="ink"><i class="fa fa-play" aria-hidden="true"></i></button>
+            <audio id="inkem">
+              <source src="./open/songs/telugu/Inkem Inkem Full Video Song __ Geetha Govindam Video Songs _ Vijay Devarakonda, Rashmika Mandanna.mp3" type="audio/mp3">
+            </audio>
+          </div>
+        </div>
+        <div class="description">
+           <P class="about">Sid Sriram</P>
+           <h1 class="name">Inkem Inkem</h1>
+        </div>
+       </div>
+       <div class="card card-3">
+        <img src="images/musiccovers/buttaB.png" alt="" class="watermark">
+        <div class="cover">
+          <div class="pb-wrapper-3">
+            <button onclick="playPauseF()" id="butta"><i class="fa fa-play" aria-hidden="true"></i></button>
+            <audio id="bomma">
+              <source src="./open/songs/telugu/ButtaBomma  (Musical Beatz).mp3" type="audio/mp3">
+            </audio>
+          </div>
+        </div>
+        <div class="description">
+           <P class="about">Armaan Malik</P>
+           <h1 class="name">ButtaBomma</h1>
+        </div>
+     </div>
+       <div class="card card-4">
+          <img src="images/musiccovers/Ramuloo_Ramulaa.jpeg">
+          <div class="cover">
+            <div class="pb-wrapper-4">
+              <button onclick="playPause1()" id="ramulo"><i class="fa fa-play" aria-hidden="true"></i></button>
+              <audio id="ramula">
+                <source src="./open/songs/telugu/yt1s.com - AlaVaikunthapurramuloo  Ramuloo Ramulaa Full Song  Allu Arjun  Trivikram  Thaman S AA19.mp3" type="audio/mp3">
+              </audio>
+            </div>
+          </div>
+           <div class="description">
+              <P class="about">Anurag Kulkarni, Mangli</P>
+              <h1 class="name">Ramulo Ramula</h1>
+           </div>
+       </div>
+       <div class="card card-5">
+        <img src="images/musiccovers/Love-Story-2021-.jpg">
+        <div class="cover">
+          <div class="pb-wrapper-5">
+            <button onclick="playPause2()" id="love"><i class="fa fa-play" aria-hidden="true"></i></button>
+            <audio id="story">
+              <source src="./open/songs/telugu/yt1s.com - SarangaDariya Video Song Love story Songs Naga Chaitanya Sai Pallavi Sekhar Kammula Pawan Ch.mp3" type="audio/mp3">
+            </audio>
+          </div>
+        </div>
+         <div class="description">
+            <P class="about">Mangli</P>
+            <h1 class="name">Saranga Dariya</h1>
+         </div>
+     </div>
+       
+    </div>
+  </section>
+
+  <section id="malayalam" class="section-p1">
+    <h2>Remix Release <i class="fas fa-arrow-right"></i></h2> 
+    <div class="container">
+       <div class="card card-1">
+          <img src="images/musiccovers/01.png" alt="" class="watermark">
+          <div class="cover">
+            <div class="pb-wrapper-1">
+              <button onclick="playPause11()" id="Дикая"><i class="fa fa-play" aria-hidden="true"></i></button>
+              <audio id="львица">
+                <source src="./open/songs/remix/yt1s.com - ALEX  RUS  ДИКАЯ ЛЬВИЦА  WILD LIONESS REMIX  DJJ REMIX .mp3" type="audio/mp3">
+              </audio>
+            </div>
+          </div>
+          <div class="description">
+             <P class="about">Alex & Rus</P>
+             <h1 class="name">Wild Lioness Remix</h1>
+          </div>
+       </div>
+       <div class="card card-2">
+         <img src="images/musiccovers/02.png">
+         <div class="cover">
+          <div class="pb-wrapper-2">
+            <button onclick="playPause111()" id="Escape"><i class="fa fa-play" aria-hidden="true"></i></button>
+            <audio id="цунами">
+              <source src="./open/songs/remix/yt1s.com - escape  Цунами.mp3" type="audio/mp3">
+            </audio>
+          </div>
+        </div>
+        <div class="description">
+           <P class="about">Escape</P>
+           <h1 class="name">Цунами Remix</h1>
+        </div>
+       </div>
+       <div class="card card-3">
+        <img src="images/musiccovers/03.png" alt="" class="watermark">
+        <div class="cover">
+          <div class="pb-wrapper-3">
+            <button onclick="playPause112()" id="Russ"><i class="fa fa-play" aria-hidden="true"></i></button>
+            <audio id="What">
+              <source src="./open/songs/remix/yt1s.com - Russ  What They Want Zak Dossi Remix.mp3" type="audio/mp3">
+            </audio>
+          </div>
+        </div>
+        <div class="description">
+           <P class="about">Russ</P>
+           <h1 class="name">What They Want Remix</h1>
+        </div>
+     </div>
+  
+       
+    </div>
+  </section>
+
+
+
+
+
+  <script src="js/player.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/popup.js"></script>
+</body>
+</html>

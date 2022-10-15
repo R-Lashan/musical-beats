@@ -1,0 +1,12 @@
+.cart{
+    width: 250px;
+    float: right;
+    text-align: center;
+    border: 1px solid black;
+    overflow-y: scroll;
+    height: 600px;
+}
+
+.cartImg > img{
+    width: 200px;
+}
